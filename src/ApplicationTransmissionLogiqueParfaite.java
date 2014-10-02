@@ -9,7 +9,7 @@ public class ApplicationTransmissionLogiqueParfaite
 {  
 	
 	/**
- 	* Méthode main de l'application
+ 	* Mï¿½thode main de l'application
  	*/
 
 	public static void main (String [] args) 
@@ -21,15 +21,15 @@ public class ApplicationTransmissionLogiqueParfaite
 		boolean utilisationSonde = false;
 		
 		/**
-     	* Déclaration d'une sonde logique
+     	* Dï¿½claration d'une sonde logique
      	*/
 		
 		Source<Boolean> source = null;
 		/**
-     	* Parcours des arguments et déclaration d'une source aléatoire
-     	* Ou déclaration d'une source fixe (message passé en paramétre)
+     	* Parcours des arguments et dï¿½claration d'une source alï¿½atoire
+     	* Ou dï¿½claration d'une source fixe (message passï¿½ en paramï¿½tre)
      	* "-s" : utilisation de la sonde
-     	* "-mess" : message envoyé
+     	* "-mess" : message envoyï¿½
      	* 
      	*/
 		for (int i = 0; i < args.length; i++) 
@@ -72,6 +72,7 @@ public class ApplicationTransmissionLogiqueParfaite
 							e.printStackTrace();
 						}
 					}
+						
 				}
 			}
 		}
@@ -95,7 +96,7 @@ public class ApplicationTransmissionLogiqueParfaite
 		TransmetteurParfait<Boolean, Boolean> transmetteur = new TransmetteurParfait<Boolean, Boolean>();
 
 		/**
-		 * Récepteur final
+		 * Rï¿½cepteur final
 		 */
 		DestinationFinale destination = new DestinationFinale();
 		
@@ -122,7 +123,7 @@ public class ApplicationTransmissionLogiqueParfaite
 			 */
 			source.connecter(sondeSource);
 		/**
-		 * Connexion du transmetteur au récepteur final 
+		 * Connexion du transmetteur au rï¿½cepteur final 
 		 */
 
 		transmetteur.connecter(destination);
